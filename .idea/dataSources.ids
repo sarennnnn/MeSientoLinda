@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="Rails MeSientoLinda: development" uuid="6a703ed6-1844-4226-91ac-9c0da99a1d22">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source name="Rails MeSientoLinda: test" uuid="87c3fa42-36de-4ed2-b5ef-b787bdbd2edf">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+</component>
