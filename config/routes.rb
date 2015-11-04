@@ -1,15 +1,6 @@
 Rails.application.routes.draw do
   root 'home#index'
-  get '/dresses' => 'dresses#index'
-  get '/dresses/:id' => 'dresses#show', as: :dress
-  get '/tops' => 'tops#index'
-  get '/tops/:id' => 'tops#show', as: :top
-  get '/bottoms' => 'bottoms#index'
-  get '/bottoms/:id' => 'bottoms#show', as: :bottom
-  get '/feet' => 'feet#index'
-  get '/feet/:id' => 'feet#show', as: :foot
-  get '/accessories' => 'accessories#index'
-  get '/accessories/:id' => 'accessories#show', as: :accessory
+  resources :dresses, :tops, :bottoms, :feet, :accessories
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

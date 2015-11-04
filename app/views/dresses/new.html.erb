@@ -1,0 +1,11 @@
+<%= form_for(@dress) do |d| %>
+    <div class="field">
+      <%= d.label :dress %><br>
+      <%= d.text_area :name %><br>
+      <%= d.text_area :season %><br>
+      <%= d.text_area :image %>
+    </div>
+    <div class="actions">
+      <%= d.submit 'Create' %>
+    </div>
+<% end %>
