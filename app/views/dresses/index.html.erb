@@ -1,23 +1,21 @@
 <div class="row">
-  <div class="col-lg-12">
-    <h1 class="page-header">Dresses
-      <small>mid season</small>
-    </h1>
-  </div>
+  <%= link_to 'New Dress', 'dresses/new' %>
 </div>
 
-<div class="tags">
-  <div class="container">
+<div class="row">
     <% @dresses.each do |d| %>
-          <div class="col-md-4">
+          <div class="col-md-3 col-sm-6">
+            <div class="thumbnail">
             <%= image_tag d.image, :align => 'middle'%>
               <h3 align="center">
                 <a href="#"><%= d.name %></a>
               </h3>
             <p align="center"> <%= d.season %> </p>
+            </div>
           </div>
       <% end %>
   </div>
+
 </div>
 </div>
 
